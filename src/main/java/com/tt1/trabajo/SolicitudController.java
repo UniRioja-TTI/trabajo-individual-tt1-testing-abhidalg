@@ -32,7 +32,7 @@ public class SolicitudController {
         model.addAttribute("entities", ics.getEntities());
         return "solicitud";
     }
-    
+
     @PostMapping("/solicitud")
     public String handleSolicitud(@RequestParam Map<String, String> formData, Model model) {
     	Map<Integer, Integer> validData = new HashMap<>();
